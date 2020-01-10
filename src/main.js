@@ -1,14 +1,14 @@
 (function(){
   'use strict';
 
-  angular.module('BankAppDemo',[])
+  angular.module('BankAppDemo',['ui.router'])
   .component('bankHeader',{
     templateUrl:'templates/bank-header.template.html',
     controller:'headerController as hCtrl'
   })
-  .controller('headerController',headerController)
   .component('bankSubMenu',{
-    templateUrl:'templates/bank-sub-menu.template.html'
+    templateUrl:'templates/bank-sub-menu.template.html',
+    controller:'subMenuController as sMCtrl'
   })
   .component('userLogin',{
     templateUrl:'templates/user-login.template.html'
@@ -18,13 +18,7 @@
   })
   .service('configService',configService);
 
-  headerController.$inject=['configService']
-  function headerController(configService){
-    var $ctrl=this;
-    $ctrl.$onInit=function(){
-      configService.getCfgDetails();
-    };
-  }
+
 
   configService.$inject=['$http'];
   function configService($http) {
@@ -32,17 +26,8 @@
     service.configDetails=[];
 
     service.getCfgDetails=function(){
-      return service.configDetails;
+      return $http.get('config/website-details.json');
     };
-
-    service.promise=$http.get('config/website-details.json');
-    service.promise.then(function(res){
-      console.log(res);
-      service.configDetails=res.data;
-    })
-    .catch(function() {
-      console.log("Failed to read configuration details");
-    });
   }
 
 })();

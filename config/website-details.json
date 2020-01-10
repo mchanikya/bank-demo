@@ -1,14 +1,14 @@
 {
   "bankName":"BANK",
   "bankMainMenu":[
-    {"homeName":"Bank Home"},
-    {"aboutName":"About Us"},
-    {"customerCareName":"Customer Care"},
-    {"helpName":"Help"}
+    "Bank Home",
+    "About Us",
+    "Customer Care",
+    "Help"
   ],
   "bankSubMenu":[
-    {"personalName":"Personal"},
-    {"nriName":"NRI"},
-    {"businessName":"Business"}
+    "Personal",
+    "NRI",
+    "Business"
   ]
 }

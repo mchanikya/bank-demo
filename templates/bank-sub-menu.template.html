@@ -1,16 +1,7 @@
-<div class="navbar navbar-expand-sm bg-light navbar-light justify-content-center" style='height:50px; font-weight:bold;'>
+<div class="navbar navbar-expand-sm bg-light navbar-light justify-content-end" style='height:50px; padding-right: 100px; font-weight:bold;'>
   <ul class="nav" style='font-size:16px;'>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Personal</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">NRI</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Business</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Help</a>
+    <li class="nav-item" ng-repeat='item in sMCtrl.subMenuCfgDetails.bankSubMenu'>
+      <a class="nav-link" href="#">{{item}}</a>
     </li>
   </ul>
 </div>
