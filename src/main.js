@@ -18,8 +18,6 @@
   })
   .service('configService',configService);
 
-
-
   configService.$inject=['$http'];
   function configService($http) {
     var service=this;
