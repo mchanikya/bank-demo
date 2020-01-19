@@ -1,13 +1,14 @@
-</div>
+<bank-header></bank-header>
+<bank-sub-menu></bank-sub-menu>
 <div class="col-md-3 col-md-offset-5" style='padding-left: 120px; padding-top:20px; float: right;' width='5%;'>
   <h4 style='color:orange;'>May I Help You?</h4>
   <div class="" style='font-size:16px;'>
     <label for="">New User?</label>
-    <a href="#"> Get UserId</a><br>
+    <a ui-sref="getUserId"> Get UserId</a><br>
     <label for="">Password?</label>
-    <a href="#">Get Password</a><br>
-    <a href="#">Trouble Logging In</a><br>
-    <a href="#">View Online Demo</a><br>
+    <a ui-sref="getPassword">Get Password</a><br>
+    <a ui-sref="TroubleLogging">Trouble Logging In</a><br>
+    <a ui-sref="OnlineDemo">View Online Demo</a><br>
   </div>
 </div>
 
@@ -40,4 +41,3 @@
     </div><br>
     <button type="submit" class="btn btn-primary" >Submit</button>
   </form>
-

@@ -8,16 +8,13 @@
     <script type="text/javascript" src='lib/angular-ui-router.min.js'></script>
 
     <script type="text/javascript" src='src/main.js'></script>
+    <script type="text/javascript" src='bank-router.js'></script>
     <script type="text/javascript" src='src/bankSubMenu.js'></script>
     <script type="text/javascript" src='src/bankHeader.js'></script>
-    <script type="text/javascript" src='bank-router.js'></script>
 <!--     <script type="text/javascript" src='src/header.js'></script>
     <script type="text/javascript" src='src/login.js'></script>
  -->  </head>
   <body>
-    <bank-header></bank-header>
-    <bank-sub-menu></bank-sub-menu>
-    <bank-body><bank-body>
-
+    <ui-view> </ui-view>
   </body>
 </html>

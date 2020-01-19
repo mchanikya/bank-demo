@@ -1,7 +1,7 @@
 <div class="navbar navbar-expand-sm bg-light navbar-light justify-content-end" style='height:50px; padding-right: 100px; font-weight:bold;'>
   <ul class="nav" style='font-size:16px;'>
     <li class="nav-item" ng-repeat='item in sMCtrl.subMenuCfgDetails.bankSubMenu'>
-      <a class="nav-link" href="#">{{item}}</a>
+      <a class="nav-link" ui-sref="{{item}}">{{item}}</a>
     </li>
   </ul>
 </div>
